@@ -7,8 +7,10 @@ export class ThemeService {
   constructor() {}
 
   updateThemeUrl(theme: string) {
-    document.getElementsByTagName("body")[0].className = theme;
+  console.log('theme :', theme);
+    let green_theme = 'green-theme'
+    document.getElementsByTagName("body")[0].className = green_theme;
 
-    localStorage.setItem("theme", JSON.stringify(theme));
+    localStorage.setItem("theme", JSON.stringify(green_theme));
   }
 }

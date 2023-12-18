@@ -6,7 +6,7 @@ declare var $: any;
 @Component({
   selector: "app-root",
   template: `
-    <div class="container">
+    <div class="">
       <app-navbar></app-navbar>
 
       <main [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">

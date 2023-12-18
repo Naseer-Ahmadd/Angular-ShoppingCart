@@ -5,7 +5,7 @@ import {
   AngularFireObject,
 } from "@angular/fire/database";
 import { Product } from "../models/product";
-// import { AuthService } from "./auth.service";
+import { AuthService } from "./auth.service";
 import { ToastrService } from "./toastr.service";
 
 @Injectable()
@@ -19,12 +19,13 @@ export class ProductService {
 
   constructor(
     private db: AngularFireDatabase,
-    // private authService: AuthService,
+    private authService: AuthService,
     private toastrService: ToastrService
   ) {}
 
   getProducts() {
     this.products = this.db.list("products");
+    console.log('this.productsssss :', this.products);
     return this.products;
   }
 
@@ -52,11 +53,11 @@ export class ProductService {
 
   // Get Favourite Product based on userId
   async getUsersFavouriteProduct() {
-    // const user = await this.authService.user$.toPromise();
-    // this.favouriteProducts = this.db.list("favouriteProducts", (ref) =>
-    //   ref.orderByChild("userId").equalTo(user.$key)
-    // );
-    // return this.favouriteProducts;
+    const user = await this.authService.user$.toPromise();
+    this.favouriteProducts = this.db.list("favouriteProducts", (ref) =>
+      ref.orderByChild("userId").equalTo(user.$key)
+    );
+    return this.favouriteProducts;
     return new Promise((res, rej) => {
       res([]);
     });

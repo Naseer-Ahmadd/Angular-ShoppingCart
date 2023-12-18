@@ -19,7 +19,10 @@
     --productTitle: #673ab7;
 }
 
-
+.green-theme{
+    --navBackground: #0bffa1;
+    --productTitle: #0bffa1;
+}
 
 $variables: (
     --navBackground: var(--navBackground),

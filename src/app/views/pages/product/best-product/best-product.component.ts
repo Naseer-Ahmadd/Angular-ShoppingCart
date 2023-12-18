@@ -49,6 +49,7 @@ export class BestProductComponent implements OnInit {
           products.forEach((element) => {
             const y = { ...element.payload.toJSON(), $key: element.key };
             this.bestProducts.push(y as Product);
+            console.log('this.bestProducts :', this.bestProducts);
           });
         },
         (error) => {

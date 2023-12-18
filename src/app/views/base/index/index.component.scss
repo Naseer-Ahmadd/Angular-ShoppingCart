@@ -1,0 +1,47 @@
+// #carousel-example-2 {
+//     max-height: 370px; /* Set your desired height here */
+//     overflow: hidden; /* Hide content that exceeds the height */
+//   }
+
+//   .carousel-inner {
+//     max-height: 100%; /* Use 100% to fill the parent container's height */
+//   }
+
+//   .carousel-item {
+//     height: 100%; /* Ensure the item fills the carousel's height */
+//   }
+
+//   .carousel-item img {
+//     object-fit: cover; /* Maintain image aspect ratio and cover the entire item */
+//     width: 100%;
+//     height: 100%;
+//   }
+
+
+/* Custom styles for the carousel */
+#carousel-example-2 {
+    height: 300px; /* Set your desired fixed height */
+    width: 100%; /* Make it full-width */
+  }
+
+  .carousel-inner {
+    height: 100%; /* Make the inner content fill the fixed height */
+  }
+
+  .carousel-item {
+    height: 100%; /* Make each item fill the fixed height */
+  }
+
+  .view {
+    height: 100%; /* Make the view fill the fixed height */
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+    padding: 15px;
+    color: #fff; /* Text color for captions */
+  }

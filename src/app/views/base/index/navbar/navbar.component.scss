@@ -3,7 +3,7 @@
 
 .navbar {
   top: 0;
-  background: var(--navBackground);
+  background-color: #ECEFF1;
 }
 
 .color-container {
@@ -43,4 +43,21 @@
   .dropdown-menu {
     margin-left: -6rem;
   }
+}
+
+
+.logo img{
+  width: 140px;
+  height: 40px;
+}
+
+.nav-link .text-black {
+  color: black;
+}
+
+
+
+// new design css
+.header__logo img{
+  height: 75px;
 }

@@ -1,12 +1,10 @@
 <!-- Carousel -->
-<div class="container">
   <!--Carousel Wrapper-->
-  <div
+  <!-- <div
     id="carousel-example-2"
     class="carousel slide carousel-fade"
     data-ride="carousel"
   >
-    <!--Indicators-->
     <ol class="carousel-indicators">
       <li
         data-target="#carousel-example-2"
@@ -16,8 +14,6 @@
       <li data-target="#carousel-example-2" data-slide-to="1"></li>
       <li data-target="#carousel-example-2" data-slide-to="2"></li>
     </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
     <div class="carousel-inner" role="listbox">
       <div
         *ngFor="let carouselItem of carouselList; let i = index"
@@ -31,14 +27,12 @@
           />
           <div class="mask rgba-black-light"></div>
         </div>
-        <div class="carousel-caption">
+        <div class="carousel-caption mb-2">
           <h3 class="h3-responsive">{{ carouselItem.title }}</h3>
           <p>{{ carouselItem.description }}</p>
         </div>
       </div>
     </div>
-    <!--/.Slides-->
-    <!--Controls-->
     <a
       class="carousel-control-prev"
       href="#carousel-example-2"
@@ -57,9 +51,10 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-    <!--/.Controls-->
-  </div>
-  <!--/.Carousel Wrapper-->
-  <br />
+  </div>-->
+  <br /> 
+<div class="container">
   <app-best-product></app-best-product>
+  
 </div>
+<app-footer></app-footer>

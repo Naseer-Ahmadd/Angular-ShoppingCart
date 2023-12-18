@@ -64,9 +64,9 @@
 .reply-form img,
 .testimonial-carousel .testimonial .avatar img,
 .z-depth-2 {
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card.card-cascade .card-body {
@@ -132,3 +132,7 @@
 .card .card-footer .right a .fa-heart {
   color: var(--navBackground) !important;
 }
+
+.hm-white-slight img{
+  height: 260px;
+  }

@@ -8,20 +8,20 @@ import { Component, OnInit } from "@angular/core";
 export class IndexComponent implements OnInit {
   carouselList = [
     {
-      bannerImg: "./assets/banner_img/img_1.jpg",
-      title: "Apple iPhone",
-      description: "Explore iPhone, the world's most powerful personal device",
+      bannerImg: "./assets/banner_img/slide_1.jpg",
+      title: "Kitchen appliances and home products",
+      description: "Elevate your home with quality kitchen appliances and curated products for a stylish, functional space.",
     },
     {
-      bannerImg: "./assets/banner_img/img_3.jpg",
-      title: "Never Settle - OnePlus",
+      bannerImg: "./assets/banner_img/slide_2.jpg",
+      title: "Holiday Toy List",
       description:
-        " OnePlus creates beautifully designed products with premium build quality & brings the best technology to users around the world",
+        "A festive curation of top holiday toys, ensuring delightful gifts for kids of all ages.",
     },
     {
-      bannerImg: "./assets/banner_img/img_4.jpg",
-      title: "Google Pixel",
-      description: "Discover a better way to capture, store, and see the world",
+      bannerImg: "./assets/banner_img/slide_3_.jpg",
+      title: "Mega Fashion Days",
+      description: "Mega Fashion Days: Unleash style with exclusive deals on the latest trends and must-have fashion items.",
     },
   ];
 

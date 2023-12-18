@@ -5,6 +5,7 @@ import { ProductListComponent } from "./product-list/product-list.component";
 import { Routes } from "@angular/router";
 
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
+import { AddProductComponent } from "./add-product/add-product.component";
 
 export const ProductRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ export const ProductRoutes: Routes = [
       {
         path: "all-products",
         component: ProductListComponent,
+      },
+      {
+        path: "add-product",
+        component: AddProductComponent,
       },
       {
         path: "favourite-products",

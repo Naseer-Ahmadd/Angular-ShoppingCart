@@ -1,23 +1,24 @@
 import { Component, OnInit } from "@angular/core";
 import { Product } from "../../../../shared/models/product";
-// import { AuthService } from "../../../../shared/services/auth.service";
+import { AuthService } from "../../../../shared/services/auth.service";
 import { ProductService } from "../../../../shared/services/product.service";
 import { ToastrService } from "src/app/shared/services/toastr.service";
 @Component({
   selector: "app-product-list",
   templateUrl: "./product-list.component.html",
   styleUrls: ["./product-list.component.scss"],
+  // providers: [ AuthService],
 })
 export class ProductListComponent implements OnInit {
   productList: Product[];
   loading = false;
-  brands = ["All", "Apple", "Realme", "Nokia", "Motorolla"];
+  brands = ["All", "Foodie", "Daawat", "HaldiRam"];
 
   selectedBrand: "All";
 
   page = 1;
   constructor(
-    // public authService: AuthService,
+    public authService: AuthService,
     private productService: ProductService,
     private toastrService: ToastrService
   ) {}
@@ -36,6 +37,7 @@ export class ProductListComponent implements OnInit {
         product.forEach((element) => {
           const y = { ...element.payload.toJSON(), $key: element.key };
           this.productList.push(y as Product);
+          console.log('this.productList :', this.productList);
         });
       },
       (err) => {

@@ -18,7 +18,9 @@ export class AddProductComponent implements OnInit {
   product: Product = new Product();
   constructor(private productService: ProductService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('hwweeeeeeeeee :', );
+  }
 
   createProduct(productForm: NgForm) {
     const payload: Product = {
